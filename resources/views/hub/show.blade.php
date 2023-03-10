@@ -76,7 +76,7 @@
 					{{ __('Table') }} Photos
 				</div>
 				<div class="card-body">
-				<div class="alert alert-warning  alert-important" role="alert">{{ __('This table is neccesary for all tables above!') }}</div>
+				<div class="alert alert-warning  alert-important" role="alert">{{ __('This table is necessary for all tables above!') }}</div>
 					<div class="row">
 						<div class="col-md-4"><sql-button type="btn-success btn-block" hub="{{$hub->name}}" tables="photos" action="create">(Re)Create Photos</sql-button></div>
 						<div class="col-md-4"><sql-button type="btn-primary btn-block" hub="{{$hub->name}}" tables="photos" action="fill">(Re)Fill Photos</sql-button></div>
@@ -90,7 +90,7 @@
 					{{ __('Table') }} Users
 				</div>
 				<div class="card-body">
-				<div class="alert alert-warning  alert-important" role="alert">{{ __('This table is neccesary for all tables above!') }}</div>
+				<div class="alert alert-warning  alert-important" role="alert">{{ __('This table is necessary for all tables above!') }}</div>
 					<div class="row">
 						<div class="col-md-4"><sql-button type="btn-success btn-block" hub="{{$hub->name}}" tables="users" action="create">(Re)Create Users</sql-button></div>
 						<div class="col-md-4"><sql-button type="btn-primary btn-block" hub="{{$hub->name}}" tables="users" action="fill">(Re)Fill Users</sql-button></div>

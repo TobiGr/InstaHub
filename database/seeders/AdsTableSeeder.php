@@ -119,6 +119,9 @@ WHERE id=$photo',
                 'query' => 'SELECT id FROM users WHERE id=$user',
                 'created_at' => '2018-10-07 23:58:59',
                 'updated_at' => '2018-10-07 23:58:59',
+//                'budget' => '12.0000',
+//                'budget_remaining' => '3,51',
+//                'clicks' => '3396'
             ],
             7 => [
                 'id' => 8,
@@ -130,6 +133,9 @@ WHERE id=$photo',
                 'query' => 'SELECT id FROM users WHERE id=$user',
                 'created_at' => '2018-10-07 23:58:59',
                 'updated_at' => '2018-10-07 23:58:59',
+//                'budget' => '35.0000',
+//                'budget_remaining' => '21,500',
+//                'clicks' => '6750'
             ],
         ]);
     }

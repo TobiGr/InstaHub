@@ -52,6 +52,9 @@ class AdController extends Controller
             'url' => 'required',
             'img' => 'required',
             'query' => 'required',
+            'budget' => 'numeric',
+            'budget_remaining' => 'numeric',
+            'clicks' => 'numeric'
         ]);
 
         $ad = new Ad;

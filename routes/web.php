@@ -31,7 +31,7 @@ Route::get('login/{token}', [\App\Http\Controllers\Auth\LoginController::class, 
 
 //static
 Route::get('/about', [StaticController::class, 'about']);
-Route::get('/noad', [StaticController::class, 'noad']);
+Route::get('/noad/{add_id}', [StaticController::class, 'noad']);
 
 /*
 |--------------------------------------------------------------------------
