@@ -21,8 +21,8 @@ return new class extends Migration {
             $table->string('img');
             $table->longText('query');
             $table->timestamps();
-            $table->double('budget')->default(0);
-            $table->double('budget_remaining')->default(0);
+            $table->double('budget')->default(0.0);
+            $table->double('price_per_click')->default(0.005);
             $table->integer('clicks')->default(0);
         });
     }

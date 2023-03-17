@@ -47,6 +47,9 @@
                 font-size: 20px;
                 padding: 20px;
             }
+            .help > .message-noad {
+                padding-bottom: 40px;
+            }
         </style>
     </head>
     <body>

@@ -5,5 +5,9 @@
 @section('message', __('messages.missedAd'))
 
 @section('help')
-    {!!__('messages.noad')!!}
+    <div class="message-noad">{!!__('messages.noad')!!}</div>
+    <div class="message-back">
+        <a class="btn btn-primary" href="javascript:history.back()">{!!__('back')!!}</a>
+    </div>
 @endsection
+

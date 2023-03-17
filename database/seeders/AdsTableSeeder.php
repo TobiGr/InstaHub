@@ -27,6 +27,9 @@ class AdsTableSeeder extends Seeder
                 'query' => 'SELECT CASE gender WHEN \'male\' THEN true ELSE false END FROM users where id=$user',
                 'created_at' => '2018-10-07 00:00:00',
                 'updated_at' => '2018-10-07 00:00:00',
+                'budget' => '12.0000',
+                'price_per_click' => '0.0075',
+                'clicks' => '3396'
             ],
             1 => [
                 'id' => 2,
@@ -44,6 +47,9 @@ FROM photos
 WHERE id=$photo',
                 'created_at' => '2018-10-07 23:58:59',
                 'updated_at' => '2018-10-07 23:58:59',
+                'budget' => '12.0000',
+                'price_per_click' => '0.0075',
+                'clicks' => '3396'
             ],
             2 => [
                 'id' => 3,
@@ -63,6 +69,9 @@ ORDER BY id DESC
 LIMIT 1',
                 'created_at' => '2018-10-07 23:58:59',
                 'updated_at' => '2018-10-07 23:58:59',
+                'budget' => '12.0000',
+                'price_per_click' => '0.0075',
+                'clicks' => '3396'
             ],
             3 => [
                 'id' => 4,
@@ -74,6 +83,9 @@ LIMIT 1',
                 'query' => 'SELECT CASE gender WHEN \'female\' THEN true ELSE false END FROM users where id=$user',
                 'created_at' => '2018-10-07 23:58:59',
                 'updated_at' => '2018-10-07 23:58:59',
+                'budget' => '12.0000',
+                'price_per_click' => '0.0075',
+                'clicks' => '3396'
             ],
             4 => [
                 'id' => 5,
@@ -91,6 +103,9 @@ FROM users
 WHERE id=$user',
                 'created_at' => '2018-10-07 23:58:59',
                 'updated_at' => '2018-10-07 23:58:59',
+                'budget' => '12.0000',
+                'price_per_click' => '0.0075',
+                'clicks' => '3396'
             ],
             5 => [
                 'id' => 6,
@@ -108,6 +123,9 @@ FROM photos
 WHERE id=$photo',
                 'created_at' => '2018-10-07 23:58:59',
                 'updated_at' => '2018-10-07 23:58:59',
+                'budget' => '12.0000',
+                'price_per_click' => '0.0075',
+                'clicks' => '3396'
             ],
             6 => [
                 'id' => 7,
@@ -119,9 +137,9 @@ WHERE id=$photo',
                 'query' => 'SELECT id FROM users WHERE id=$user',
                 'created_at' => '2018-10-07 23:58:59',
                 'updated_at' => '2018-10-07 23:58:59',
-//                'budget' => '12.0000',
-//                'budget_remaining' => '3,51',
-//                'clicks' => '3396'
+                'budget' => '12.0000',
+                'price_per_click' => '0.0075',
+                'clicks' => '3396'
             ],
             7 => [
                 'id' => 8,
@@ -133,9 +151,9 @@ WHERE id=$photo',
                 'query' => 'SELECT id FROM users WHERE id=$user',
                 'created_at' => '2018-10-07 23:58:59',
                 'updated_at' => '2018-10-07 23:58:59',
-//                'budget' => '35.0000',
-//                'budget_remaining' => '21,500',
-//                'clicks' => '6750'
+                'budget' => '35.0000',
+                'price_per_click' => '0.002',
+                'clicks' => '6750'
             ],
         ]);
     }

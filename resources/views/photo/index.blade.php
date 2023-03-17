@@ -44,7 +44,7 @@
                             <div class="card-body" style="padding:1rem 0 0 0;">
                                 <h5 style="padding-left:1.00rem;" class="card-title"><img class="rounded-circle img-thumbnail" src="/000.jpg" alt="000.jpg" width="50" height="50"> <a href="#" style="color: #333">{{ __('Special Offer') }}</a></h5>              
                             </div>
-                            <a href="{{$ad->url}}"><img src="{{$ad->img}}" class="card-img-bottom" style="display: block;margin: 0 auto; width:100%"></a>
+                            <a href="{{$ad->getUrl()}}"><img src="{{$ad->img}}" class="card-img-bottom" style="display: block;margin: 0 auto; width:100%"></a>
                         </div>
                         @endif
                     @endif

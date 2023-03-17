@@ -22,6 +22,9 @@
                             <tr>
                                 <th>{{__('Name')}}</th>
                                 <th class="fit">{{__('Type')}}</th>
+                                <th class="fit">{{__('Budget')}}</th>
+                                <th class="fit">{{__('Price per Click')}}</th>
+                                <th class="fit">{{__('Clicks')}}</th>
                                 <th class="fit">{{__('URL')}}</th>
                                 <th class="fit">{{__('Actions')}}</th>
                             </tr>
@@ -29,8 +32,11 @@
 
                         <tbody>
                             <tr v-for="(ad, index) in ads">
-                                <td><a v-bind:href="'/ads/' + ad.id">@{{ad.name}}</a></td> 
+                                <td><a v-bind:href="'/ads/' + ad.id">@{{ad.name}}</a></td>
                                 <td class="fit">@{{ad.type}}</td>
+                                <td class="fit">@{{ad.budget,4}}€</td>
+                                <td class="fit">@{{ad.pricePerClick}}€</td>
+                                <td class="fit">@{{ad.clicks}}</td>
                                 <td class="fit"><code>@{{ad.url}}</code></td>    
                                 <td class="fit">
                                     <a v-bind:class="{ disabled: !!readonly }" class="btn btn-sm btn-secondary" v-bind:href="'/ads/' + ad.id" ><img src="/clarity/pencil-line.svg" width="24" height="24" alt="Edit"></a>

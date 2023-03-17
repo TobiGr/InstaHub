@@ -38,6 +38,8 @@ return [
     'adEditor' => [
         'position' => 'Banner werden unter Photos und Photos an dritter Stelle des Newsfeeds angezeigt.',
         'priority' => 'Wenn zwei oder mehr Anzeigen möglich sind, dann wird die mit der höheren Priorität (etwa 1) ausgewählt.',
+        'budget' => 'Der Betrag in Euro, den der Werbetreibende für die Anzeige bezahlt hat. Damit die Anzeige angezeigt wird, muss der Betrag größer als 0€ sein.',
+        'pricePerClick' => 'Die Kosten in Euro, die beim Click auf die Anzeige für den Anzeigenstelller entstehen. Dieser Betrag wird beim Click auf die Anzeige vom Budget der Anzeige abgezogen.',
         'url' => 'Link zur Werbekampagne.',
         'image' => 'Absolute (<code>https://public.instahub.org/img/ad/brokkoli.jpg</code>) oder relative (<code>/img/ad/brokkoli.jpg</code>) URL zum anzuzeigenden Bild.',
         'query' => 'Die Abfrage muss <code>true</code> oder <code>false</code> ergeben. Alternativ kann auch eine Liste zurückgegeben werden, in welcher die Benutzer-ID gesucht wird. <code>$user</code> kann als Platzhalter für den angemeldeten Benutzer und <code>$photo</code> für das aktuelle Photo verwendet werden.',

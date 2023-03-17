@@ -434,6 +434,7 @@
     "Press \/ to search": "Drücken Sie \/ zum Suchen",
     "Preview": "Vorschau",
     "Previous": "Vorherige",
+    "Price per click": "Kosten pro Click",
     "Privacy Policy": "Datenschutzerklärung",
     "Profile": "Profil",
     "Profile Information": "Profilinformationen",
@@ -820,5 +821,8 @@
 	"Latest Photos": "Neuste Photos",
 	"Suggested": "Vorschläge",
     "Username is not `admin`.": "Der Benutzername ist nicht `admin`",
-    "Only predefined hub names are allowed.": "Nur vorgegebene Hubnamen sind erlaubt."
+    "Only predefined hub names are allowed.": "Nur vorgegebene Hubnamen sind erlaubt.",
+    "Budget": "Budget",
+    "Clicks": "Klicks",
+    "Price per Click": "Preis pro Klick"
 }

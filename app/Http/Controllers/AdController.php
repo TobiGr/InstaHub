@@ -53,7 +53,7 @@ class AdController extends Controller
             'img' => 'required',
             'query' => 'required',
             'budget' => 'numeric',
-            'budget_remaining' => 'numeric',
+            'price_per_click' => 'numeric',
             'clicks' => 'numeric'
         ]);
 
@@ -64,6 +64,9 @@ class AdController extends Controller
         $ad->url = $request->url;
         $ad->img = $request->img;
         $ad->query = $request->get('query'); // $request->query is reserved...
+        $ad->budget = $request->budget;
+        $ad->price_per_click = $request->price_per_click;
+        $ad->clicks = $request->clicks;
 
         $ad->save();
 
@@ -101,6 +104,9 @@ class AdController extends Controller
             'url' => 'required',
             'img' => 'required',
             'query' => 'required',
+            'budget' => 'numeric',
+            'price_per_click' => 'numeric',
+            'clicks' => 'numeric'
         ]);
 
         $ad = Ad::findOrFail($id);
@@ -110,12 +116,27 @@ class AdController extends Controller
         $ad->url = $request->url;
         $ad->img = $request->img;
         $ad->query = $request->get('query'); // $request->query is reserved...
+        $ad->budget = $request->budget;
+        $ad->price_per_click = $request->price_per_click;
+        $ad->clicks = $request->clicks;
 
         $ad->save();
 
         flash($ad->name.' saved')->success();
 
         return redirect('/ads');
+    }
+
+    public function noad($id) {
+        $ad = Ad::find($id);
+        if ($ad != null && $ad->budget > 0) {
+            $ad->clicks++;
+            $ad->budget -= $ad->price_per_click;
+            $ad->save();
+            // idea for later: also store the user's click in a separate analytics table or extend the analytics table
+            // to also contain the adID
+        }
+        return view('errors.noad');
     }
 
     /**

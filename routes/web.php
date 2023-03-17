@@ -31,7 +31,7 @@ Route::get('login/{token}', [\App\Http\Controllers\Auth\LoginController::class, 
 
 //static
 Route::get('/about', [StaticController::class, 'about']);
-Route::get('/noad/{add_id}', [StaticController::class, 'noad']);
+//Route::get('/noad', [StaticController::class, 'noad']);
 
 /*
 |--------------------------------------------------------------------------
@@ -178,6 +178,9 @@ Route::domain(config('app.domain_hub'))->group(function () {
         Route::post('/ads', [AdController::class, 'store']);
         Route::put('/ads/{id}', [AdController::class, 'update']);
         Route::delete('/api/ads/{id}', [AdController::class, 'destroy']);
+
+        // noad
+        Route::get('/noad/{id}', [AdController::class, 'noad']);
 
         //users - last so no one can override hub urls
         Route::get('{username}/followers', [FollowController::class, 'followers']);

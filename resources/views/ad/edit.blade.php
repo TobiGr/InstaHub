@@ -53,6 +53,40 @@
                             </div>
                         </div>
 
+                        <div class="form-group{{ $errors->has('budget') ? ' has-error' : '' }} row">
+                            <label for="budget" class="col-md-4 col-form-label text-md-right">{{ __('Budget') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="budget" type="number" class="form-control @error('budget') is-invalid @enderror" name="budget" value="{{ old('budget', $ad->budget) }}" placeholder="15.0" min="0" autofocus>
+                                <small id="passwordHelpBlock" class="form-text text-muted">
+                                    {{ __('messages.adEditor.budget') }}
+                                </small>
+
+                                @error('budget')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('pricePerClick') ? ' has-error' : '' }} row">
+                            <label for="pricePerClick" class="col-md-4 col-form-label text-md-right">{{ __('Price per Click') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="pricePerClick" type="number" class="form-control @error('pricePerClick') is-invalid @enderror" name="pricePerClick" value="{{ old('pricePerClick', $ad->pricePerClick) }}" placeholder="0.005" min="0" max="100" step="0.0001" autofocus>
+                                <small id="passwordHelpBlock" class="form-text text-muted">
+                                    {{ __('messages.adEditor.pricePerClick') }}
+                                </small>
+
+                                @error('pricePerClick')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
                         <div class="form-group{{ $errors->has('priority') ? ' has-error' : '' }} row">
                             <label for="priority" class="col-md-4 col-form-label text-md-right">{{ __('Priority') }}</label>
 

@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ad extends Model
 {
-    protected $fillable = ['name', 'type', 'priority', 'url', 'img', 'query', 'budget', 'budget_remaining', 'clicks'];
+    protected $fillable = ['name', 'type', 'priority', 'url', 'img', 'query', 'budget', 'price_per_click', 'clicks'];
 
     public static function getAd($photo_id = null)
     {
@@ -62,8 +62,7 @@ class Ad extends Model
         return self::find($id);
     }
 
-    public function clickOnAdd() {
-
+    public function getUrl() {
+        return $this->url . '/' . $this->id;
     }
-
 }

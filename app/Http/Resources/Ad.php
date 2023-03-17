@@ -20,6 +20,9 @@ class Ad extends JsonResource
             'type' => $this->type,
             'url' => $this->url,
             'img' => $this->img,
+            'budget' => $this->budget,
+            'pricePerClick' => $this->price_per_click,
+            'clicks' => $this->clicks,
         ];
     }
 }
