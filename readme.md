@@ -75,4 +75,4 @@ Thank you for considering contributing to the InstaHub! Create a pull request or
 InstaHub used parts of [Laragram](https://github.com/itsshady101/Laragram) from [itsshady101](https://github.com/itsshady101) 
 
 ### License
-[Mozilla Public License (MPL)](https://www.mozilla.org/en-US/MPL/2.0/)
+[Mozilla Public License (MPL)](./LICENSE)
